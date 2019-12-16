@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Image:</strong>
+  <strong>写真:</strong>
   <%= image_tag @feed.image.url %>
 </p>
 <p>本文:<%= @feed.content %></p>
-<%= link_to 'Edit', edit_feed_path(@feed) %> |
-<%= link_to 'Back', feeds_path %>
+<%= link_to '編集する', edit_feed_path(@feed) %> |
+<%= link_to 'blog一覧へ戻る', feeds_path %>

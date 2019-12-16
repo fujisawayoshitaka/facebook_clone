@@ -4,22 +4,42 @@
     <title>FacebookClone</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+   <div class="container">
+   <header class="header">
+    <div>
+       <p class="Fakebook">Fakebook</p>
+    </div>
+    <div align="right">
     <% flash.each do |key, value| %>
       <%= content_tag(:div, value, class: "#{key}") %>
     <% end %>
+
     <% if logged_in? %>
       <%= link_to "Profile", user_path(current_user.id) %>
       <%= link_to "Logout", session_path(current_user.id), method: :delete %>
+      <span class="label label-default">ログイン中</span>
     <% else %>
       <%= link_to "Sign up", new_user_path %>
       <%= link_to "Login", new_session_path %>
+      <span class="label label-danger">ログアウト中</span>
     <% end %>
-    <%= yield %>
+    </div>
+  </header>
+
+      <article class="article">
+        <%= yield %>
+      </article>
+
+    <footer class="footer">
+          <p>© 2019 FacebookClone.</p>
+    </footer>
+    </div>
   </body>
+
 </html>

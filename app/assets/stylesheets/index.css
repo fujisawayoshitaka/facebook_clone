@@ -1,0 +1,65 @@
+html {
+  font-size: 62.5%;
+  /* 追記 */
+  height: 100%;
+}
+
+body {
+  /* 追記,削除 */
+  height: 100%;
+}
+
+.logged_in{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Fakebook{
+  color: #fff;
+}
+/* 追記 */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  background-color: lightblue;
+}
+
+.header{
+  background-color: #381cd6;
+  height: 70px;
+  width:100%;
+  font-size: 20px;    /* 文字サイズ指定 */
+    color: blue;     /* 文字色指定 */
+}
+
+.sign_up{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.article{
+  background-color: skyblue;
+　width:100%;
+  font-size: 20px;    /* 文字サイズ指定 */
+    color: blue;     /* 文字色指定 */
+}
+
+.footer{
+  background-color: #4D4D4D;
+  height: 100px;
+  width: 100%;
+　min-width:980px;
+  position: absolute;
+  bottom: 0;
+  display: table;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
