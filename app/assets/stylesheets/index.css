@@ -17,9 +17,8 @@ body {
 .Fakebook{
   color: #fff;
 }
-/* 追記 */
+
 .container {
-  width: 100%;
   margin: 0 auto;
   position: relative;
   min-height: 100%;
@@ -29,7 +28,6 @@ body {
 .header{
   background-color: #381cd6;
   height: 70px;
-  width:100%;
   font-size: 20px;    /* 文字サイズ指定 */
     color: blue;     /* 文字色指定 */
 }
@@ -41,7 +39,6 @@ body {
 
 .article{
   background-color: skyblue;
-　width:100%;
   font-size: 20px;    /* 文字サイズ指定 */
     color: blue;     /* 文字色指定 */
 }
