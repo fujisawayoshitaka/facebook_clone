@@ -9,7 +9,9 @@ body {
   height: 100%;
 }
 
-
+.edit{
+  padding-left: 100px;
+}
 
 .logged_in{
   text-align: center;
